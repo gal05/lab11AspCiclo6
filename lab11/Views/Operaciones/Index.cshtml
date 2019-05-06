@@ -1,0 +1,31 @@
+﻿
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+
+<form action="/Operaciones/resultados" method="post">
+    <table>
+        <tr>
+            <td>
+                Precio del producto
+            </td>
+            <td>
+                <input type="text" name="txtprecio"  />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Cantidad Producto
+            </td>
+            <td>
+                <input type="text" name="txtcantidad"/>
+            </td>
+        </tr>
+
+    </table>
+    <button>Ejecuta !</button>
+</form>

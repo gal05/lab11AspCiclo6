@@ -16,7 +16,7 @@ namespace lab11
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Alummno", action = "Index", id = UrlParameter.Optional }
             );
         }
     }

@@ -1,0 +1,80 @@
+﻿@model lab11.Models.Alumno
+@{
+    ViewBag.Title = "final";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <table class="table-bordered">
+        <tr>
+            <td colspan="4">
+                <center>REgistro de notas de Alumnos</center>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Codigo de alumno
+            </td>
+            <td>
+                <h4>@Model.codigo</h4>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Nombre
+            </td>
+            <td>
+                <h4>@Model.nombre</h4>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Curso
+            </td>
+            <td>
+                <h4>@Model.curso</h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ex. Parcial :
+            </td>
+            <td>
+                <h4>@Model.exparcial</h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ex. Final :
+            </td>
+            <td>
+                <h4>@Model.exFinal</h4>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Practica :
+            </td>
+            <td>
+                <h4>@Model.practica</h4>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Nota final :
+            </td>
+            <td>
+                <h4>@Model.estadoFinal()   <strong>@Model.textoFinal() </strong></h4> 
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+

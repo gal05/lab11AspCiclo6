@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <form action="/Alumno/resultadosAlumno" method="post">
+        <table class="table-bordered">
+            <tr>
+                <td colspan="4">
+                    <center>REgistro de notas de Alumnos</center>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Codigo de alumno
+                </td>
+                <td>
+                    <input type="text" name="txtcodigo"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Nombre
+                </td>
+                <td>
+                    <input type="text" name="txtnombre"  />
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Curso
+                </td>
+                <td>
+                    <select id="Package_State" name="txtcurso">
+                        <option value="java">JAVA</option>
+                        <option value="php">PHP</option>
+                        <option value="ruby">RUBY</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ex. Parcial :
+                </td>
+                <td>
+                    <input type="text" name="txtparcial"  />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ex. Final :
+                </td>
+                <td>
+                    <input type="text" name="txtfinal"  />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Practica :
+                </td>
+                <td>
+                    <input type="text" name="txtpractica"/>
+                </td>
+            </tr>
+
+        </table>
+        <table>
+            <tr>
+                <td><button type="submit">Procesar</button></td>
+
+                <td>
+                    <button>Limpiar</button>
+                </td>
+            </tr>
+
+
+        </table>
+        
+
+    </form>
+
+</body>
+</html>

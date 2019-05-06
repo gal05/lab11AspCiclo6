@@ -1,0 +1,63 @@
+﻿@model lab11.Models.Producto
+@{
+    ViewBag.Title = "boleta";
+}
+
+<h2>boleta</h2>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <table class="table-bordered">
+        <tr>
+            <td colspan="2">
+                <center>REgistro de Ventas</center>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Precio del producto
+            </td>
+            <td>
+                <input type="text" name="txtprecio" value=@Model.precio />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Cantidad
+            </td>
+            <td>
+                <input type="text" name="txtcantidad" value=@Model.cantidad />
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Subtotal
+            </td>
+            <td>
+                <input type="text" name="txtsubtotal" value=@Model.subtotal />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                IGV
+            </td>
+            <td>
+                <input type="text" name="txtigv" value=@Model.igv />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Total
+            </td>
+            <td>
+                <input type="text" name="txttotal" value=@Model.total />
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
